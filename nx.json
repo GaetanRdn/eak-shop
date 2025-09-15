@@ -72,7 +72,11 @@
     },
     "@nx/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "vitest"
+      "unitTestRunner": "vitest",
+      "flat": "true",
+      "inline-template": "true",
+      "inline-style": "true",
+      "changeDetection": "OnPush"
     },
     "@nx/angular:component": {
       "style": "css",
