@@ -2,7 +2,9 @@
   "name": "@eak-shop/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve:eak-shop": "nx serve eak-shop --port=4210"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~20.2.0",
