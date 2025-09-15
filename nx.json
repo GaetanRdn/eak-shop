@@ -74,8 +74,8 @@
       "linter": "eslint",
       "unitTestRunner": "vitest",
       "flat": "true",
-      "inline-template": "true",
-      "inline-style": "true",
+      "inlineTemplate": "true",
+      "inlineStyle": "true",
       "changeDetection": "OnPush"
     },
     "@nx/angular:component": {
