@@ -76,7 +76,8 @@
       "flat": "true",
       "inlineTemplate": "true",
       "inlineStyle": "true",
-      "changeDetection": "OnPush"
+      "changeDetection": "OnPush",
+      "prefix": "eak"
     },
     "@nx/angular:component": {
       "style": "css",

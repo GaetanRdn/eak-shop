@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { Button } from '@eak-shop/shared-ui';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [RouterModule, Button],
   selector: 'app-root',
-  template: `
-    <app-nx-welcome></app-nx-welcome>
-    <router-outlet></router-outlet>
-  `,
+  template: `<eak-button>Click me !</eak-button>`,
 })
-export class App {
-}
+export class App {}
