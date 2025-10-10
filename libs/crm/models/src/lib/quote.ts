@@ -8,6 +8,8 @@ export const QuoteLineSchema = z.object({
   quantity: z.number(),
 });
 
+export type QuoteLine = z.infer<typeof QuoteLineSchema>;
+
 export const QuoteSchema = z.object({
   id: z.uuid(),
   opportunityId: OpportunitySchema.shape.id,
