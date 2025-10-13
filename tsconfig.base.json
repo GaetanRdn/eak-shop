@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@eak-shop/crm-domain": ["libs/crm/domain/src/index.ts"],
+      "@eak-shop/crm-infra": ["libs/crm/infra/src/index.ts"],
       "@eak-shop/crm-models": ["libs/crm/models/src/index.ts"],
       "@eak-shop/shared-models": ["libs/shared/models/src/index.ts"],
       "@eak-shop/shared-ui": ["libs/shared/ui/src/index.ts"]
