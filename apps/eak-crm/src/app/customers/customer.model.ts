@@ -1,4 +1,4 @@
-export interface Customer {
+export type Customer = {
   id: string;
   firstName: string;
   lastName: string;
@@ -11,7 +11,7 @@ export interface Customer {
   country?: string;
   createdAt: Date;
   updatedAt: Date;
-}
+};
 
 export type CustomerCreate = Omit<Customer, 'id' | 'createdAt' | 'updatedAt'>;
 export type CustomerUpdate = Partial<CustomerCreate>;

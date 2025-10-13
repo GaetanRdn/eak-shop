@@ -1,12 +1,12 @@
-export interface QuoteLine {
+export type QuoteLine = {
   id: string;
   description: string;
   quantity: number;
   unitPrice: number;
   total: number;
-}
+};
 
-export interface Quote {
+export type Quote = {
   id: string;
   customerId: string;
   customerName?: string; // For display purposes
@@ -25,7 +25,19 @@ export interface Quote {
   notes?: string;
   createdAt: Date;
   updatedAt: Date;
-}
+};
 
-export type QuoteCreate = Omit<Quote, 'id' | 'quoteNumber' | 'createdAt' | 'updatedAt' | 'subtotal' | 'discountAmount' | 'totalBeforeTax' | 'taxAmount' | 'totalAmount'>;
+export type QuoteCreate = Omit<
+  Quote,
+  | 'id'
+  | 'quoteNumber'
+  | 'createdAt'
+  | 'updatedAt'
+  | 'subtotal'
+  | 'discountAmount'
+  | 'totalBeforeTax'
+  | 'taxAmount'
+  | 'totalAmount'
+>;
+
 export type QuoteUpdate = Partial<QuoteCreate>;
