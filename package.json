@@ -1,9 +1,11 @@
 {
-  "name": "@eak-shop/source",
+  "name": "@eak-crm/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve:eak-shop": "nx serve eak-shop --port=4210"
+    "start": "nx serve eak-crm --port=4205",
+    "build": "nx build eak-crm",
+    "test": "nx test eak-crm"
   },
   "private": true,
   "dependencies": {

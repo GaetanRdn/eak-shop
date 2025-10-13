@@ -1,0 +1,15 @@
+<div class="app-container">
+  <nav class="app-nav">
+    <div class="nav-brand">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="nav-links">
+      <a routerLink="/customers" routerLinkActive="active">Clients</a>
+      <a routerLink="/quotes" routerLinkActive="active">Devis</a>
+    </div>
+  </nav>
+  
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+</div>
